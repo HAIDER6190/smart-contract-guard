@@ -42,7 +42,7 @@ Many developers rely solely on database validation (like Mongoose) and skip API-
 
 ---
 
-## **Installation**
+## **Usage**
 ## **1. Import the package**
 ```
 const express = require("express");
@@ -108,8 +108,10 @@ Response:
   ]
 }
 ```
+## **Installation**
 ```bash
 npm install smart-contract-guard
+
 
 
 

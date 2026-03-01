@@ -1,0 +1,17 @@
+{
+  "name": "smart-contract-guard",
+  "version": "1.0.0",
+  "description": "Advanced API request/response validator for Node.js",
+  "main": "index.js",
+  "types": "types.d.ts",
+  "keywords": [
+    "validation",
+    "api",
+    "contract",
+    "express",
+    "dto",
+    "json"
+  ],
+  "author": "Abdisalam Ahmed Ali",
+  "license": ""
+}

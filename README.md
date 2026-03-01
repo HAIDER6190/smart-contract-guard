@@ -43,14 +43,14 @@ Many developers rely solely on database validation (like Mongoose) and skip API-
 ---
 
 ## **Installation**
+## **1. Import the package**
 ```
-1. Import the package
 const express = require("express");
 const { contract, guard, validateResponse } = require("smart-contract-guard");
 
 const app = express();
 app.use(express.json());
-
+```
 2. Define a Contract
 const CreateUserContract = contract({
   body: {
@@ -103,4 +103,5 @@ Response:
 ```
 ```bash
 npm install smart-contract-guard
+
 

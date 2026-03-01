@@ -43,6 +43,7 @@ Many developers rely solely on database validation (like Mongoose) and skip API-
 ---
 
 ## **Installation**
+```
 1. Import the package
 const express = require("express");
 const { contract, guard, validateResponse } = require("smart-contract-guard");
@@ -99,6 +100,7 @@ Response:
     "age must be >= 18"
   ]
 }
-
+```
 ```bash
 npm install smart-contract-guard
+

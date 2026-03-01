@@ -51,7 +51,9 @@ const { contract, guard, validateResponse } = require("smart-contract-guard");
 const app = express();
 app.use(express.json());
 ```
-2. Define a Contract
+## **2. Define a Contract**
+```
+
 const CreateUserContract = contract({
   body: {
     email: { type: "string", required: true },
@@ -70,8 +72,10 @@ const CreateUserContract = contract({
   query: {
     page: { type: "number", required: false, min: 1 }
   }
+```
+## **3. Use Guard in Routes**
+```
 
-3. Use Guard in Routes
 app.post("/users", guard(CreateUserContract), (req, res) => {
   // Request is validated
   const user = req.body;
@@ -79,6 +83,9 @@ app.post("/users", guard(CreateUserContract), (req, res) => {
   // Optional: validate response
   return validateResponse(CreateUserContract)(res, user);
 });
+```
+## **4. Example: Invalid Request**
+```
 
 4. Example: Invalid Request
 
@@ -103,5 +110,6 @@ Response:
 ```
 ```bash
 npm install smart-contract-guard
+
 
 
